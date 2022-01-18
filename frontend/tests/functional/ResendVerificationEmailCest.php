@@ -2,6 +2,7 @@
 
 namespace frontend\tests\functional;
 
+use common\entities\User;
 use common\fixtures\UserFixture;
 use frontend\tests\FunctionalTester;
 
@@ -76,7 +77,7 @@ class ResendVerificationEmailCest
         $I->seeRecord('common\models\User', [
             'email' => 'test@mail.com',
             'username' => 'test.test',
-            'status' => \common\models\User::STATUS_INACTIVE
+            'status' => User::STATUS_INACTIVE
         ]);
         $I->see('Check your email for further instructions.');
     }
