@@ -7,4 +7,6 @@ return [
     'user.passwordResetTokenExpire' => 3600,
     'user.passwordMinLength' => 1,
     'cookieDomain' => '.shop.loc',
+    'frontendHostInfo' => 'http://shop.loc',
+    'backendHostInfo' => 'http://backend.shop.loc',
 ];
